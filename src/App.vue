@@ -4,7 +4,7 @@
     <v-app-bar app> <Logo /> </v-app-bar>
 
     <!-- main-navigation -->
-    <v-navigation-drawer app permanent> </v-navigation-drawer>
+    <v-navigation-drawer app permanent> <MainNavigation /></v-navigation-drawer>
 
     <!-- main-view -->
     <v-main>
@@ -17,12 +17,14 @@
 
 <script>
 import Logo from "@/components/Logo";
+import MainNavigation from "@/components/MainNavigation";
 
 export default {
   name: "App",
 
   components: {
-    Logo
+    Logo,
+    MainNavigation,
   },
 
   data: () => ({
