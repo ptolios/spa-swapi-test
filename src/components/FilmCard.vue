@@ -24,7 +24,7 @@
       <div>last edited on: {{ filmInfo.edited }}</div>
     </v-card-text>
     <v-card-actions>
-      <v-btn block color="success">More Info</v-btn>
+      <v-btn block color="success" @click="moreInfo">More Info</v-btn>
     </v-card-actions>
   </v-card>
 </template>
@@ -32,6 +32,11 @@
 <script>
 export default {
   props: ["filmInfo"],
+  methods: {
+    moreInfo() {
+      this.$emit("film-id", this.filmInfo.episode_id);
+    },
+  },
 };
 </script>
 
