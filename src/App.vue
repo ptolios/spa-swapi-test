@@ -8,7 +8,7 @@
 
     <!-- main-view -->
     <v-main>
-      <v-container>
+      <v-container class="main-container">
         <router-view></router-view>
       </v-container>
     </v-main>
@@ -32,3 +32,10 @@ export default {
   }),
 };
 </script>
+
+<style scoped>
+.main-container {
+  height: 65vh;
+  overflow: scroll;
+}
+</style>
