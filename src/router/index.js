@@ -1,14 +1,20 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "@/views/Home.vue";
+import Films from "@/views/Films";
+import People from "@/views/People";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: "/",
-    name: "Home",
-    component: Home
+    name: "Films",
+    component: Films
+  },
+  {
+    path: "/people",
+    name: "People",
+    component: People
   }
 ];
 
