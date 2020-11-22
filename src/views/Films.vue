@@ -12,7 +12,11 @@
         <FilmCard :filmInfo="film" @film-id="selectedFilmId"></FilmCard>
       </v-col>
     </v-row>
-    <FilmSubview :filmData="filmData"></FilmSubview>
+    <v-row>
+      <v-col cols="6" offset="3">
+        <FilmSubview :filmData="filmData"></FilmSubview>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
