@@ -1,7 +1,7 @@
 <template>
   <v-app dark>
     <!-- logo -->
-    <v-app-bar app> </v-app-bar>
+    <v-app-bar app> <Logo /> </v-app-bar>
 
     <!-- main-navigation -->
     <v-navigation-drawer app permanent> </v-navigation-drawer>
@@ -16,10 +16,14 @@
 </template>
 
 <script>
+import Logo from "@/components/Logo";
+
 export default {
   name: "App",
 
-  components: {},
+  components: {
+    Logo
+  },
 
   data: () => ({
     //
